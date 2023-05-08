@@ -1,0 +1,11 @@
+.saveButton {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+@media all and(min-width: 1024px) {
+  .saveButton {
+    margin: 0;
+  }
+}

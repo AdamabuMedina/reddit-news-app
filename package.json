@@ -1,0 +1,77 @@
+{
+  "name": "sbreact",
+  "version": "1.0.0",
+  "description": "Skillbox react course",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development DOMAIN=http://localhost:3000 webpack --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production CLIENT_ID=bqQ77LWgH3dUzw DOMAIN=https://react-skillbox-app.herokuapp.com webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development CLIENT_ID=SCJobOW3EGzptg SECRET=wQGhqx-O3P-QYdEZRI14oN5rRMgZGQ DOMAIN=http://localhost:3000 node ./bin/dev.js",
+    "test": "test",
+    "start": "env CLIENT_ID=bqQ77LWgH3dUzw SECRET=M5624wpC-kg7nJW5tfJpDJrFS288Iw DOMAIN=https://react-skillbox-app.herokuapp.com node ./dist/server/server.js"
+  },
+  "keywords": [
+    "React",
+    "Skillbox"
+  ],
+  "bugs": {
+    "url": "https://github.com/AdamabuMedina/reactMyApp/issues"
+  },
+  "homepage": "https://github.com/AdamabuMedina/reactMyApp#readme",
+  "author": "Adam Barkinkhoev <adamabujamila@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamabuMedina/reactMyApp.git"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^17.0.0-rc.2",
+    "@types/classnames": "^2.2.11",
+    "@types/jest": "^26.0.19",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "express": "^4.17.1",
+    "formik": "^2.2.6",
+    "helmet": "^4.4.1",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.5.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "nanoid": "^3.1.20",
+    "nodemon": "^2.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "storeon": "^3.1.4",
+    "style-loader": "^1.3.0",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "bin": {
+    "sbreact": "bin/dev.js"
+  },
+  "devDependencies": {}
+}

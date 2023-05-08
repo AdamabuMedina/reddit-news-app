@@ -1,0 +1,18 @@
+@media all and (min-width: 1024px) {
+  .cardList {
+    padding: 29px 0;
+    cursor: pointer;
+  }
+
+  .buttonLoad {
+    background: #cc6633;
+    border-radius: 0 0 3px 0;
+    width: 220px;
+    height: 50px;
+    color: white;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

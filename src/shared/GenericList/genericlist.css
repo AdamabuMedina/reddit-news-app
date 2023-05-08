@@ -1,0 +1,29 @@
+.list_underline_grey {
+  border-bottom: 1px solid var(--greyC4);
+}
+
+.list_underline_grey:hover {
+  color: var(--orange);
+}
+
+.card_dropdown {
+  text-align: left;
+}
+
+.card_dropdown path {
+  fill: #808080;
+}
+
+.card_dropdown svg {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.card_dropdown:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.card_dropdown:hover path {
+  fill: var(--orange);
+}

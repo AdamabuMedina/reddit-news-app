@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  flex: 1 1 0;
+}
+
+.listContainer {
+  position: absolute;
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  width: fit-content;
+  float: right;
+  top: 15px;
+  position: relative;
+}

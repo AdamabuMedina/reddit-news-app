@@ -1,0 +1,17 @@
+export const indexTemplate = (content, token) => /*html*/`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reddit</title>
+  <script src="static/client.js" type="application/javascript"></script>
+  <script>
+    window.__token__='${token}'
+  </script>
+</head>
+<body>
+  <div id="react_root">${content}</div>
+  <div id="modal_root"></div>
+  <div id="dropdown_root"></div>
+</body>
+</html>
+`;

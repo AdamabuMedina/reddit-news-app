@@ -1,0 +1,37 @@
+.karmaCounter > * + * {
+  padding: 0 0 0 4px;
+}
+
+.karmaValue {
+  margin-left: 4px;
+  color: var(--greyC4);
+}
+
+.up {
+  margin-left: 5px;
+}
+svg.down {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+  .karmaCounter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .karmaCounter > button.up:hover > svg > path {
+    fill: var(--green);
+  }
+
+  .karmaCounter > button.down:hover > svg > path {
+    fill: var(--orange);
+  }
+
+  .karmaValue {
+    margin: 7px 0;
+    color: var(--black);
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

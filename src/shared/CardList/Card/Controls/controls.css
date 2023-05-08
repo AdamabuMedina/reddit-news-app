@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .controls {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .controls {
+    padding: 0;
+    position: absolute;
+    right: 3%;
+    top: 42px;
+    order: 3;
+  }
+}

@@ -1,0 +1,127 @@
+.commentContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.leftCommentBlock {
+  order: 1;
+}
+
+.karmaCounter {
+  display: flex;
+  flex-direction: column;
+}
+
+.up:hover path {
+  fill: var(--green);
+}
+
+.karmaValue {
+  margin: 0 4px;
+  color: var(--greyC4);
+}
+
+.down:hover path {
+  fill: var(--orange);
+}
+
+.greyPillar {
+  height: 100%;
+  width: 3px;
+  background-color: var(--greyD9);
+  height: calc(100% - 80px);
+  margin: 18px auto;
+}
+
+.rightCommentBlock {
+  order: 1;
+  padding-left: 22px;
+  padding-top: 5px;
+}
+
+.userLink .metaData {
+  display: flex;
+  align-items: center;
+}
+
+.userLink {
+  padding-right: 7px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.username {
+  color: var(--orange);
+  padding-left: 7px;
+  margin: 5px 0;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+.createdAt,
+.createdAt * {
+  color: var(--grey99);
+}
+
+.publishedLabel {
+  display: none;
+}
+
+.category {
+  margin: 10px 0 10px 10px;
+  padding: 2px 7px 4px 7px;
+  background-color: var(--greyD9);
+  color: var(--black);
+}
+
+.commentText {
+  margin-bottom: 30px;
+}
+
+.commentDescr {
+  margin: 10px 0;
+}
+
+.commentAction {
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.commentAction span,
+.commentAction svg {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.commentAction span {
+  margin-left: 6px;
+  margin-right: 20px;
+}
+
+.commentAction:hover span {
+  color: var(--orange);
+}
+.commentAction:hover svg path {
+  fill: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+  .metaData {
+    order: 2;
+  }
+
+  .userLink {
+    order: 0;
+  }
+
+  .publishedLabel {
+    display: inline;
+  }
+}
